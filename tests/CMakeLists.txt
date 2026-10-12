@@ -13,6 +13,7 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(${PROJECT_NAME}-tests
     physics/geometry_vector/named_requirements_test.cpp
+    physics/geometry_vector/euclidean_vector_2d_test.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}-tests PRIVATE

@@ -40,6 +40,8 @@ class EuclideanVector2D {
     Scalar X() const { return x_; };
     Scalar Y() const { return y_; };
 
+    bool operator==(const EuclideanVector2D& other) const { return x_ == other.x_ && y_ == other.y_; }
+
    private:
     Scalar x_;
     Scalar y_;
@@ -80,6 +82,8 @@ class EuclideanVector3D {
     Scalar X() const { return x_; }
     Scalar Y() const { return y_; }
     Scalar Z() const { return z_; }
+
+    bool operator==(const EuclideanVector3D& other) const { return x_ == other.x_ && y_ == other.y_ && z_ == other.z_; }
 
    private:
     Scalar x_;
