@@ -2,7 +2,7 @@
 
 #include "physics/geometry_vector.h"
 
-namespace {
+namespace Physics {
 
 using Scalar = EuclideanVector2D::Scalar;
 
@@ -70,4 +70,4 @@ TEST(PhysicsGeometryVectorEuclideanVector2D, DotProductIsCommutative) {
     EXPECT_EQ(x, y);
 }
 
-}  // namespace
+}  // namespace Physics

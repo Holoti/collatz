@@ -2,6 +2,8 @@
 
 #include "geometry_vector.h"
 
+namespace Physics {
+
 template <Vector V>
 class PointParticle {
    public:
@@ -22,3 +24,5 @@ template <Vector V>
 V::Scalar Distance(const PointParticle<V>& p1, const PointParticle<V>& p2) {
     return Distance(p1.GetPosition(), p2.GetPosition());
 }
+
+}  // namespace Physics

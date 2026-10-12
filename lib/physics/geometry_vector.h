@@ -3,6 +3,8 @@
 #include <cmath>
 #include <concepts>
 
+namespace Physics {
+
 template <typename V>
 concept Vector = requires(const V a, const V b, V::Scalar s) {
     typename V::Scalar;
@@ -100,3 +102,5 @@ template <Vector V>
 V::Scalar Distance(const V& lhs, const V& rhs) {
     return Norm(lhs - rhs);
 }
+
+}  // namespace Physics
