@@ -5,7 +5,9 @@
 
 template <Vector V>
 class Spring {
-    Spring(const PointParticle<V>& point1, const PointParticle<V>& point2) : point1_(point1), point2_(point2) {}
+   public:
+    Spring(const PointParticle<V>& point1, const PointParticle<V>& point2, const V::Scalar& rest_length = typename V::Scalar{})
+        : point1_(point1), point2_(point2), rest_length_(rest_length), current_length_(Distance(point1_, point2_)) {}
 
     const V::Scalar& GetRestLength() { return rest_length_; }
     void SetRestLength(const V::Scalar& rest_length) { rest_length_ = rest_length; }
