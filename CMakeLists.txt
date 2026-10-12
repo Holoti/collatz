@@ -11,3 +11,7 @@ add_subdirectory(dependencies)
 add_subdirectory(lib)
 
 add_subdirectory(bin)
+
+enable_testing()
+
+add_subdirectory(tests)

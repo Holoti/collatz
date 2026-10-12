@@ -14,7 +14,7 @@ concept Vector = requires(const V a, const V b, V::Scalar s) {
     { a * s } -> std::same_as<V>;
     { a / s } -> std::same_as<V>;
 
-    { a.dot(b) } -> std::same_as<typename V::scalar>;
+    { a.Dot(b) } -> std::same_as<typename V::Scalar>;
 };
 
 class EuclideanVector2D {
@@ -67,7 +67,7 @@ class EuclideanVector3D {
         return EuclideanVector3D{x_ / scalar, y_ / scalar, z_ / scalar};
     }
 
-    Scalar dot(const EuclideanVector3D& other) const { return Scalar{x_ * other.x_ + y_ * other.y_ + z_ * other.z_}; }
+    Scalar Dot(const EuclideanVector3D& other) const { return Scalar{x_ * other.x_ + y_ * other.y_ + z_ * other.z_}; }
 
     EuclideanVector3D Cross(const EuclideanVector3D& other) const {
         return EuclideanVector3D{
