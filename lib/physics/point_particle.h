@@ -17,3 +17,8 @@ class PointParticle {
     V position_;
     V velocity_;
 };
+
+template <Vector V>
+V::Scalar Distance(const PointParticle<V>& p1, const PointParticle<V>& p2) {
+    return Distance(p1.GetPosition(), p2.GetPosition());
+}
