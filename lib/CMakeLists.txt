@@ -1,5 +1,4 @@
 add_library(${PROJECT_NAME}-lib STATIC
-    collatz/collatz.cpp
     collatz/tree.cpp
 )
 
