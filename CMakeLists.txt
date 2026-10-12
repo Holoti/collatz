@@ -15,3 +15,5 @@ add_subdirectory(bin)
 enable_testing()
 
 add_subdirectory(tests)
+
+include(cmake/coverage.cmake)
