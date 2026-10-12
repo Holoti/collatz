@@ -23,7 +23,7 @@ class EuclideanVector2D {
    public:
     using Scalar = double;
 
-    EuclideanVector2D() : x_(Scalar{0}), y_(Scalar{0}) {}
+    EuclideanVector2D() : x_(Scalar{}), y_(Scalar{}) {}
 
     EuclideanVector2D(Scalar x, Scalar y) : x_(x), y_(y) {}
 
@@ -53,7 +53,7 @@ class EuclideanVector3D {
    public:
     using Scalar = double;
 
-    EuclideanVector3D() : x_(Scalar{0}), y_(Scalar{0}), z_(Scalar{0}) {}
+    EuclideanVector3D() : x_(Scalar{}), y_(Scalar{}), z_(Scalar{}) {}
 
     EuclideanVector3D(Scalar x, Scalar y, Scalar z) : x_(x), y_(y), z_(z) {}
 
