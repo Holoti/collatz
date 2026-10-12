@@ -70,4 +70,21 @@ TEST(PhysicsGeometryVectorEuclideanVector2D, DotProductIsCommutative) {
     EXPECT_EQ(x, y);
 }
 
+TEST(PhysicsGeometryVectorEuclideanVector2D, NormTest) {
+    EuclideanVector2D a{3, 4};
+    
+    Scalar norm = Norm(a);
+
+    EXPECT_EQ(norm, 5);
+}
+
+TEST(PhysicsGeometryVectorEuclideanVector2D, DistanceTest) {
+    EuclideanVector2D a{6, 2};
+    EuclideanVector2D b{3, -2};
+    
+    Scalar distance = Distance(a, b);
+
+    EXPECT_EQ(distance, 5);
+}
+
 }  // namespace Physics
