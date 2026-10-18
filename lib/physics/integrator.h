@@ -34,6 +34,7 @@ class Integrator : public IIntegrator<V> {
     void ApplySpeed(PhysicsEntityStorage<V>& storage);
 
     void ApplyRepulsiveForce(PhysicsEntityStorage<V>& storage, AccelerationStorage& acceleration);
+    void ApplyCenterAttraction(PhysicsEntityStorage<V>& storage, AccelerationStorage& acceleration);
 };
 
 }  // namespace Physics
